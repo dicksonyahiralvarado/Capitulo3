@@ -1,0 +1,16 @@
+/* 
+R-3.9 Proporcione una implementación del método size() para la clase SingularlyLinkedList, asumiendo que no 
+mantuvimos size como una variable de instancia.
+*/
+
+if(isEmpty()) {
+    throws new Empty();
+}
+int count = 1;
+Node runner = head;
+while(runner.getNext()!=null) { 
+    count++;
+    runner = runner.getNext();
+}
+
+//No estoy seguro

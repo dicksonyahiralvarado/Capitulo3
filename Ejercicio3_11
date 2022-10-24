@@ -1,0 +1,15 @@
+/* 
+R-3.11 Proporcione una implementación del método size() para la clase DoublyLinkedList, asumiendo que no 
+mantuvimos size como una variable de instancia.
+*/
+
+public int getSize() {
+       int count=0;
+       Node trav=head;
+       // iterando a través de todos los nodos y contando cuántos tiene
+       while(trav!=null) {
+           count++;
+           trav=trav.next;
+       }
+       return count;
+   }

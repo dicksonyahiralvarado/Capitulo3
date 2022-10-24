@@ -1,0 +1,14 @@
+/* 
+R-3.6 Proporcione un algoritmo para encontrar el penúltimo nodo en una lista enlazada simple en la que el 
+último nodo se indica mediante una referencia nula.
+*/
+
+Private Node<E> penultimate() 
+{
+    if(size<2)
+    thrownew IllegalStateException("la lista debe tener 2 o más entradas");
+    Node<E> walk = head;
+    While (walk->next->next != null)
+    walk = walk->next;
+    return walk;
+}
