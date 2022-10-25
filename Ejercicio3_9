@@ -12,5 +12,3 @@ while(runner.getNext()!=null) {
     count++;
     runner = runner.getNext();
 }
-
-//No estoy seguro
